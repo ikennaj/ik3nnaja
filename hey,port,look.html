@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        body{
+            width: 100%;
+            margin: 0px;
+            background-color: transparent;
+        }
+        #container{
+            width: 100%;
+            height: 1880px;
+            /* background-color: blue; */
+        }
+        #a{
+            width: 100%;
+            height: 475px;
+            background-color: transparent;
+            background-image: url(bgi.jpg);
+            background-size: cover;
+            box-shadow: 1px 1px 10px 1px blue;
+            background-repeat: no-repeat;
+            /* display: inline-flex; */
+        }
+        #hu{
+            width: 100%;
+            height: 80px;
+            border-bottom: 1px solid wheat;
+            /* background-color: purple; */
+            /* float: left; */
+        }
+        #ui{
+            /* width: 17.3%; */
+            width: 10%;
+            height: 70px;
+            margin-left: 70px;
+            /* background-color: peru; */
+            padding-top: 7px;
+            float: left;
+        }
+        #se{
+            width: 125px;
+            height: 70px;
+            /* background-color: lawngreen; */
+            text-shadow: 2px 2px 2px black;
+            font-size: 44px;
+            font-family: Bloody;
+            color: rgb(245, 25, 76);
+            font-style: italic;
+            font-weight: 300;
+        }
+        #ju{
+            font-size: 25px;
+            margin-top: 30px;
+            font-family: cursive;
+            font-weight: 300;
+            font-style: normal;
+            color: white;
+            /* font-weight: 700; */
+            /* overflow:hidden;*/
+        }
+        #ki{
+            width: 660px;
+            height: 80px;
+            /* float: left; */
+            display: inline-block;
+            margin-left: 310px;
+            /* background-color: red;  */
+            border-right: 1px solid wheat;
+        }
+        #nav{
+            width: 100%;
+            height:80px;
+            /* background-color: blue; */
+            /* overflow: hidden; */
+        }
+        #nav ul{
+            display: block;
+            margin: 0%;
+            list-style-type: none;
+        }
+        #nav ul li{
+            list-style-type: none;
+            display: inline-block;
+
+        }
+        #nav ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 15px;
+            padding: 24px;
+            padding-top: 19px;
+            font-family: Arial;
+            display: inline-block;
+        }
+        #nav ul li a p:hover{
+            background-color: rgba(245, 222, 179, 0.304);
+            color: white;
+        }
+        #he{
+            width: 200px;
+            height: 70px;
+            float: right;
+            margin-right: 40px;
+            /* background-color: firebrick; */
+        }
+        #up{
+            width: 160px;
+            height: 40px;
+            margin-top: 22px;
+            background-image: url(socials.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* border-radius: 250px; */
+            /* background-color: floralwhite; */
+
+        }
+        #nu{
+            width: 100%;
+            height: 80px;
+            /* text-align: center; */
+            /* background-color: tomato; */
+            margin-top: 250px;
+        }
+        #hty{
+            width: 444px;
+            height: 75px;
+            margin-left: 600px;
+            /* background-color: hotpink; */
+            font-size: 70px;
+            text-shadow: 2px 2px 2px rgb(129, 128, 128);
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+            color: white;
+        }
+        #y{
+            width: 275px;
+            height: 39px;
+            margin-left: 587px;
+            margin-top: 39px;
+            text-shadow: 2px 2px 2px rgb(129, 128, 128);
+            /* background-color: green; */
+            /* text-align: center; */
+            font-size: 28px;
+            font-family: cursive;
+            color: white;
+        }
+        #look{
+            width: 100%;
+            height: 680px;
+            box-shadow: 1px 1px 10px 3px rgb(255, 234, 0);
+            background-color: whitesmoke;
+        }
+        /* #jua{
+            width: 80%;
+            height: 550px;
+            background-color: firebrick;
+        } */
+        #jua{
+            width: 84%;
+            height: 520px;
+            margin-left: 124px;
+            padding-top: 74px;
+            background-color: whitesmoke;
+        }
+        #xdr{
+            width: 293px;
+            height: 172px;
+            background-image: url(q1.jpeg);
+            background-size: cover;
+            float: left;
+            /* margin-top: 4px; */
+            /* margin-left: 4px; */
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #rse{
+            width: 293px;
+            height: 172px;
+            background-image: url(q2.jpg);
+            background-size: cover;
+            float: left;
+            /* margin-top: 4px; */
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #heu{
+            width: 293px;
+            height: 172px;
+            background-image: url(q3.jpeg);
+            background-size: cover;
+            float: left;
+            /* margin-top: 4px; */
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #bhs{
+            width: 293px;
+            height: 172px;
+            background-image: url(q4.jpeg);
+            background-size: cover;
+            float: left;
+            /* margin-top: 4px; */
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #whn{
+            width: 293px;
+            height: 172px;
+            background-image: url(q5.jpeg);
+            background-size: cover;
+            float: left;
+            margin-top: 12px;
+            /* margin-left: 6px; */
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #itt{
+            width: 293px;
+            height: 172px;
+            background-image: url(q6.jpg);
+            background-size: cover;
+            float: left;
+            margin-top: 12px;
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #pyf{
+            width: 293px;
+            height: 172px;
+            background-image: url(q7.jpeg);
+            background-size: cover;
+            float: left;
+            margin-top: 12px;
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #tyw{
+            width: 293px;
+            height: 172px;
+            background-image: url(q8.jpeg);
+            background-size: cover;
+            float: left;
+            margin-top: 12px;
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #mja{
+            width: 293px;
+            height: 172px;
+            background-image: url(q9.jpeg);
+            background-size: cover;
+            float: left;
+            margin-top: 12px;
+            /* margin-left: 6px; */
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #vzj{
+            width: 293px;
+            height: 172px;
+            background-image: url(q10.jpeg);
+            background-size: cover;
+            float: left;
+            margin-top: 12px;
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #efe{
+            width: 293px;
+            height: 172px;
+            background-image: url(q11.jpeg);
+            background-size: cover;
+            float: left;
+            margin-top: 12px;
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #cfs{
+            width: 293px;
+            height: 172px;
+            background-image: url(q12.jpg);
+            background-size: cover;
+            float: left;
+            margin-top: 12px;
+            margin-left: 12px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #sww{
+            width: 100%;
+            height: 430px;
+            background-color: black;
+        }
+        #tfu{
+            width: 100%;
+            height: 430px;
+            background-color: blueviolet;
+            background-image: url(bacc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* margin-left: 21px; */
+            /* opacity: 0.7; */
+        }
+        #mob{
+            width: 80%;
+            height: 330px;
+            /* background-color: orangered; */
+            padding-top: 44px;
+            /* margin-top: 30px; */
+            margin-left: 130px;
+        }
+        #cki{
+            width: 330px;
+            height: 310px;
+            float: left;
+            /* background-color: peru; */
+            /* padding-top: 30px;
+            margin-left: 30px; */
+        }
+        #bgy{
+            width: 363px;
+            height: 259px;
+            /* background-color: khaki; */
+            background-image: url(me.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* padding-top: 30px; */
+            margin-left: 38px;
+        }
+        #zhu{
+            width: 110%;
+            height: 63px;
+            padding-top: 8.4px;
+            background-color: whitesmoke;
+            /* font-family: CCherry-Bird Demo; */
+            font-size: 27px;
+            line-height: 26.4px;
+            text-align: center;
+            margin-left: 38px;
+            color: red;
+        }
+        #hyl{
+            width: 100%;
+            height: 40px;
+            /* background-color: firebrick; */
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+        }
+        #tcy{
+            width: 65.1%;
+            height: 334px;
+            background-color: rgba(255, 0, 191, 0.213);
+            /* opacity: 0.7; */
+            float: right;
+            margin-right: 3px;
+        }
+        #myd{
+            width: 100%;
+            height: 75px;
+            /* background-color: lawngreen; */
+            font-size: 17px;
+            /* margin-left: -38px; */
+            padding-top: 106px;
+            line-height: 27px;
+            text-align: center;
+            color: white;
+        }
+        #cdz{
+            width: 100%;
+            height: 110px;
+            padding-top: 39px;
+            /* margin-left: -38px; */
+            /* padding-top: 30px; */
+            /* background-color: khaki; */
+        }
+        #ufo{
+            width: 69px;
+            height: 43px;
+            background-image: url(prnt.png);
+            /* padding-top: 50px; */
+            /* margin-top: 50px; */
+            /* text-align: center; */
+            margin-left: 334px;
+            /* background-color: rebeccapurple; */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #dfr{
+            width: 100%;
+            height: 300px;
+            background-color: red;
+        }
+        #ljj{
+            width: 100%;
+            height: 80px;
+            background-color: rgb(39, 39, 39);
+        }
+        #nqn{
+            width: 10.4%;
+            height: 50px;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            float: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 90px;
+            border-bottom: 1px solid wheat;
+            padding-top: 30px;
+            font-size: 24.4px;
+            font-weight: 100;
+        }
+        #bxh{
+            width: 10.4%;
+            height: 50px;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            float: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 134px;
+            border-bottom: 1px solid wheat;
+            padding-top: 30px;
+            font-size: 24.4px;
+            font-weight: 100;
+        }
+        #nau{
+            width: 10.4%;
+            height: 50px;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            float: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 134px;
+            border-bottom: 1px solid wheat;
+            padding-top: 30px;
+            font-size: 24.4px;
+            font-weight: 100;
+        }
+        #boq{
+            width: 10.4%;
+            height: 50px;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            float: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 134px;
+            border-bottom: 1px solid wheat;
+            padding-top: 30px;
+            font-size: 24.4px;
+            font-weight: 100;
+        }
+        #jis{
+            width: 100%;
+            height: 220px;
+            background-color: rgb(39, 39, 39);
+        }
+        #bvu{
+            width: 18.2%;
+            height: 127px;
+            float: left;
+            background-color: rgb(39, 39, 39);
+            padding-top: 27px;
+            margin-left: 90px;
+        }
+        #mqu{
+            width: 100%;
+            height: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            font-size: 10px;
+        }
+        #bod{
+            width: 100%;
+            height: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            padding-top: 24px;
+            font-size: 13.2px;
+        }
+        #gwv{
+            width: 15.2%;
+            height: 123px;
+            float: left;
+            margin-left: 22.2px;
+            padding-top: 27px;
+            background-color: rgb(39, 39, 39);
+        }
+        #byr{
+            width: 30px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            border-radius: 2px;
+            /* margin-left: 4px; */
+            float: left;
+            color: white;
+            padding: 9px;
+        }
+        #zsj{
+            width: 56px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            border-radius: 2px;
+            margin-left: 3.7px;
+            color: white;
+            float: left;
+            padding: 9px;
+        }
+        #bgw{
+            width: 47px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            color: white;
+            border-radius: 2px;
+            float: left;
+            margin-left: 3.5px;
+            padding: 9px;
+        }
+        #vgtf{
+            width: 103.4px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            color: white;
+            border-radius: 2px;
+            margin-top: 4px;
+            float: left;
+            padding: 9px;
+        }
+        #ftef{
+            width: 32px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-left: 3.5px;
+            color: white;
+            border-radius: 2px;
+            margin-top: 4px;
+            float: left;
+            padding: 9px;
+        }
+        #cgwh{
+            width: 36px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            /* margin-left: 3.7px; */
+            color: white;
+            margin-top: 4px;
+            border-radius: 2px;
+            float: left;
+            padding: 9px;
+        }
+        #wtg{
+            width: 38px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-left: 3px;
+            border-radius: 2px;
+            color: white;
+            margin-top: 4px;
+            float: left;
+            padding: 9px;
+        }
+        #gta{
+            width: 42px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-left: 3px;
+            color: white;
+            border-radius: 2px;
+            margin-top: 4px;
+            float: left;
+            padding: 9px;
+        }
+        #boy{
+            width: 57.3px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-top: 5px;
+            border-radius: 2px;
+            /* margin-left: 3.7px; */
+            color: white;
+            float: left;
+            padding: 9px;
+        }
+        #vas{
+            width: 38px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-left: 3.1px;
+            color: white;
+            border-radius: 2px;
+            margin-top: 4.5px;
+            float: left;
+            padding: 9px;
+        }
+        #vyqu{
+            width: 17.5%;
+            height: 153px;
+            float: left;
+            padding-top: 28px;
+            margin-left: 64px;
+            background-color: rgb(39, 39, 39);
+        }
+        #bbdu{
+            width: 100%;
+            height: 70px;
+            float: left;
+            background-color: rgb(39, 39, 39);
+        }
+        #aas{
+            width: 19px;
+            height: 15px;
+            background-color: rgb(39, 39, 39);
+            background-image: url(tweet.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #vgd{
+            width: 220px;
+            height: 69px;
+            margin-left: 33px;
+            float: left;
+            line-height: 21px;
+            background-color: rgb(39, 39, 39);
+            font-size: 15px;
+            margin-top: -15px;
+            color: white;
+        }
+        #vdou{
+            color: rgb(245, 0, 216);
+            font-size: 14px;
+            /* margin-top: 38px; */
+            background-color: rgb(39, 39, 39);
+        }
+        #llk{
+            width: 100%;
+            height: 70px;
+            margin-top: 13px;
+            float: left;
+            background-color: rgb(39, 39, 39);
+        }
+        #vup{
+            width: 19px;
+            height: 15px;
+            background-color: rgb(39, 39, 39);
+            background-image: url(tweet.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #pop{
+            width: 220px;
+            height: 69px;
+            margin-left: 33px;
+            float: left;
+            line-height: 21px;
+            background-color: rgb(39, 39, 39);
+            font-size: 15px;
+            margin-top: -15px;
+            color: white;
+        }
+        #kmk{
+            color: rgb(245, 0, 216);
+            font-size: 14px;
+            /* margin-top: 38px; */
+            background-color: rgb(39, 39, 39);
+        }
+        #srv{
+            width: 18.5%;
+            height: 160px;
+            float: left;
+            margin-left: 36px;
+            margin-top: 25px;
+            background-color: rgb(39, 39, 39);
+        }
+        #rrwf{
+            width: 77px;
+            height: 77px;
+            background-image: url(t1.jpg);
+            background-size: contain;
+            float: left;
+            /* margin-top: 4px; */
+            /* margin-left: 4px; */
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #ftwg{
+            width: 77px;
+            height: 77px;
+            background-image: url(t2.jpg);
+            background-size: contain;
+            float: left;
+            /* margin-top: 4px; */
+            margin-left: 4px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #hcw{
+            width: 77px;
+            height: 77px;
+            background-image: url(t3.jpg);
+            background-size: contain;
+            float: left;
+            /* margin-top: 4px; */
+            margin-left: 4px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #aweq{
+            width: 77px;
+            height: 77px;
+            background-image: url(t4.jpg);
+            background-size: contain;
+            float: left;
+            margin-top: 4px;
+            /* margin-left: 6px; */
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #ywv{
+            width: 77px;
+            height: 77px;
+            background-image: url(t55.jpg);
+            background-size: contain;
+            float: left;
+            margin-top: 4px;
+            margin-left: 4px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #uho{
+            width: 77px;
+            height: 77px;
+            background-image: url(t6.jpg);
+            background-size: contain;
+            float: left;
+            margin-top: 4px;
+            margin-left: 4px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="a">
+            <div id="hu">
+            <div id="ui">
+                <div id="gg">
+                    <div id="se" style="font-family: Forte;">hey<span id="ju" style="font-family: Freehand521 BT;">look</span></div>
+                </div>
+            </div>
+            <div id="ki">
+                    <!-- <div id="ti">HOME</div>
+                    <div id="lp">ABOUT</div>
+                    <div id="hj">SERVICES</div>
+                    <div id="ll">PORTFOLIO</div>
+                    <div id="gh">CONTACT</div> -->
+                    <div id="nav">
+                        <ul>
+                          <li><a href="heylook.html"><p>HOME</p></a></li>
+                          <li><a href="hey,abt,look.html"><p>ABOUT</p></a></li>
+                          <!-- <li><a href="hey,services,look.html"><p>SERVICES</p></a></li> -->
+                          <li><a href="hey,news,look.html"><p>NEWS</p></a></li>
+                          <li><a href="hey,port,look.html"><p>PORTFOLIO</p></a></li>
+                          <li><a href="hey,con,look.html"><p>CONTACTS</p></a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div id="he">
+                <div id="up"></div>
+            </div>
+            </div>
+            <div id="nu">
+                <div id="hty" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Portfolio</div>
+                <!-- <div id="y">tag your unique styles</div> -->
+            </div>
+        </div>
+        <div id="look">
+            <div id="jua">
+                <div id="xdr"></div>
+                <div id="rse"></div>
+                <div id="heu"></div>
+                <div id="bhs"></div>
+                <div id="whn"></div>
+                <div id="itt"></div>
+                <div id="pyf"></div>
+                <div id="tyw"></div>
+                <div id="mja"></div>
+                <div id="vzj"></div>
+                <div id="efe"></div>
+                <div id="cfs"></div>
+            </div>
+        </div>
+        <div id="sww">
+            <div id="tfu">
+                <div id="mob">
+                <div id="cki">
+                    <div id="bgy"></div>
+                    <div id="zhu">Author<br><span id="hyl">Ikenna Joseph</span> </div>
+                </div>             
+                <div id="tcy">
+                    <div id="myd">Ikenna Joseph is a human on planet earth...<br><br></div>
+                    <div id="cdz">
+                        <div id="ufo"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="dfr">
+            <div id="ljj">
+                <div id="nqn">About</div>
+                <div id="bxh">The Tags</div>
+                <div id="nau">Latest Tweets</div>
+                <div id="boq">Flickr Feed</div>
+            </div>
+            <div id="jis">
+                <div id="bvu">
+                    <div id="mqu">Copyright © 2023 Heylook Ventures Inc. All<br>Rights Reserved.<br>
+                        All products featured on Heylook are<br>independently selected by our editors.<br> However, when you buy something through<br> our retail links, you will earn an affiliate<br> commission. As an Amazon Associate<br> Heylook earns from qualifying<br> purchases. The material on this site can not<br> be reproduced, distributed, transmitted,<br> cached or otherwise used, except with prior<br> written permission of Heylook ventures Inc.</div>
+                    <!-- <div id="bod">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit pellentesque id arcu<br>reque, et convallis es felis.</div> -->
+                </div>
+                <div id="gwv">
+                    <div id="byr">Hairs</div>
+                    <div id="zsj">Footwears</div>
+                    <div id="bgw">Bespoke</div>
+                    <div id="vgtf">Capsule Wardrode</div>
+                    <div id="ftef">Junior</div>
+                    <div id="cgwh">Petites</div>
+                    <div id="wtg">Atelier</div>
+                    <div id="gta">Vintage</div>
+                    <div id="boy">Make-ups</div>
+                    <div id="vas">Preppy</div>
+                    <!-- <div id="vyqu"></div>
+                    <div id="bbdu"></div> -->
+                </div>
+                <div id="vyqu">
+                    <div id="bbdu">
+                        <div id="aas"></div>
+                        <div id="vgd">very swift and realiable!!!<br><b>janehermans2@gmail.com</b><br><span id="vdou">ABOUT 10 MINS AGO</span></div>
+                    </div>
+                    <div id="llk">
+                        <div id="vup"></div>
+                        <div id="pop">#best fashion website i know.<br><b>leobrown70@gmail.com</b><br><span id="kmk">ABOUT 43 MINS AGO</span></div>
+                    </div>
+                </div>
+                <div id="srv">
+                    <div id="rrwf"></div>
+                    <div id="ftwg"></div>
+                    <div id="hcw"></div>
+                    <div id="aweq"></div>
+                    <div id="ywv"></div>
+                    <div id="uho"></div>
+                </div>
+            </div>
+            <!-- <div id="gwv">
+                <div id="byr">Model</div>
+                <div id="zsj">Awesome</div>
+                <div id="bgw">Model</div>
+                <div id="vgtf">Photography</div>
+                <div id="ftef">Model</div>
+                <div id="cgwh">Awesome</div>
+                <div id="wtg">Model</div>
+                <div id="gta">Model</div>
+                <div id="boy">Awesome</div>
+                <div id="vas">Model</div>
+                <. <div id="vyqu"></div>
+                <div id="bbdu"></div> .>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>

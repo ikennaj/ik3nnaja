@@ -1,0 +1,646 @@
+<html>
+    <head>
+        <title>contacts</title>
+    </head>
+    <style>
+        body{
+            width: 100%;
+            margin: 0px;
+            /* background-color: violet; */
+        }
+        #container{
+            width: 100%;
+            height: 1800px;
+            /* background-color: white; */
+        }
+        #a{
+            width: 100%;
+            height: 429px;
+            /* background-color: red; */
+            background-image: url(bgi.jpg);
+            /* box-shadow: 1px 1px 10px 3px rgb(255, 234, 0); */
+            background-size: contain;
+            /* box-shadow: 1px 1px 10px 1px blue; */
+            background-repeat: no-repeat;
+            /* display: inline-flex; */
+        }
+        #hu{
+            width: 100%;
+            height: 80px;
+            border-bottom: 1px solid wheat;
+            /* background-color: purple; */
+            /* float: left; */
+        }
+        #ui{
+            /* width: 17.3%; */
+            width: 10%;
+            height: 70px;
+            margin-left: 70px;
+            /* background-color: peru; */
+            padding-top: 7px;
+            float: left;
+        }
+        #se{
+            width: 125px;
+            height: 70px;
+            /* background-color: lawngreen; */
+            text-shadow: 2px 2px 2px black;
+            font-size: 44px;
+            font-family: Bloody;
+            color: rgb(245, 25, 76);
+            font-style: italic;
+            font-weight: 300;
+        }
+        #ju{
+            font-size: 25px;
+            margin-top: 30px;
+            font-family: cursive;
+            font-weight: 300;
+            font-style: normal;
+            color: white;
+            /* font-weight: 700; */
+            /* overflow:hidden;*/
+        }
+        #ki{
+            width: 600px;
+            height: 80px;
+            /* float: left; */
+            display: inline-block;
+            margin-left: 260px;
+            /* background-color: red;  */
+            border-right: 1px solid wheat;
+        }
+        #nav{
+            width: 100%;
+            height:80px;
+            /* background-color: blue; */
+            /* overflow: hidden; */
+        }
+        #nav ul{
+            display: block;
+            margin: 0%;
+            list-style-type: none;
+        }
+        #nav ul li{
+            list-style-type: none;
+            display: inline-block;
+
+        }
+        #nav ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 13px;
+            padding: 24px;
+            padding-top: 25px;
+            font-family: Arial;
+            display: inline-block;
+        }
+        #nav ul li a p:hover{
+            background-color: rgba(245, 222, 179, 0.304);
+            color: white;
+        }
+        #he{
+            width: 200px;
+            height: 70px;
+            float: right;
+            margin-right: 17px;
+            /* background-color: firebrick; */
+        }
+        #up{
+            width: 153px;
+            height: 34px;
+            margin-top: 27px;
+            background-image: url(socials.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* border-radius: 250px; */
+            /* background-color: floralwhite; */
+
+        }
+        #nu{
+            width: 100%;
+            height: 70px;
+            /* text-align: center; */
+            /* background-color: tomato; */
+            margin-top: 200px;
+        }
+        #hty{
+            width: 250px;
+            height: 62px;
+            margin-left: 530px;
+            /* background-color: hotpink; */
+            /* font-weight: 100; */
+            /* text-align: center; */
+            font-size: 68px;
+            text-shadow: 2px 2px 2px rgb(129, 128, 128);
+            color: white;
+        }
+        #y{
+            width: 275px;
+            height: 39px;
+            margin-left: 515px;
+            margin-top: 39px;
+            text-shadow: 2px 2px 2px rgb(129, 128, 128);
+            /* background-color: green; */
+            /* text-align: center; */
+            font-size: 27px;
+            font-family: cursive;
+            color: white;
+        }
+        #sam{
+            width: 100%;
+            height: 80px;
+            box-shadow: 1px 1px 10px 3px rgb(255, 234, 0);
+            /* margin-top: 80px; */
+            background-color: white;
+        }
+        #ass{
+            width: 100%;
+            height: 570px;
+            /* box-shadow: 1px 1px 10px 3px rgb(255, 234, 0); */
+            /* margin-top: 80px; */
+            background-color: white;
+        }
+        #qas{
+            width: 99%;
+            height: 535px;
+            /* text-align: center; */
+            margin-left: 5px;
+            box-shadow: 0px 3px 10px 6px black;
+            /* background-color: magenta; */
+            background-image: url(loo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #cvv{
+            width: 100%;
+            height: 340px;
+            background-color: white;
+        }
+        #frr{
+            width: 70%;
+            height: 340px;
+            margin: 80px;
+            margin-left: 184px;
+            background-color: white;
+        }
+        #dfr{
+            width: 100%;
+            height: 300px;
+            background-color: red;
+        }
+        #ljj{
+            width: 100%;
+            height: 80px;
+            background-color: rgb(39, 39, 39);
+        }
+        #nqn{
+            width: 10.4%;
+            height: 50px;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            float: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 90px;
+            border-bottom: 1px solid wheat;
+            padding-top: 30px;
+            font-size: 24.4px;
+            font-weight: 100;
+        }
+        #bxh{
+            width: 10.4%;
+            height: 50px;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            float: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 134px;
+            border-bottom: 1px solid wheat;
+            padding-top: 30px;
+            font-size: 24.4px;
+            font-weight: 100;
+        }
+        #nau{
+            width: 10.4%;
+            height: 50px;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            float: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 134px;
+            border-bottom: 1px solid wheat;
+            padding-top: 30px;
+            font-size: 24.4px;
+            font-weight: 100;
+        }
+        #boq{
+            width: 10.4%;
+            height: 50px;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            float: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 134px;
+            border-bottom: 1px solid wheat;
+            padding-top: 30px;
+            font-size: 24.4px;
+            font-weight: 100;
+        }
+        #jis{
+            width: 100%;
+            height: 220px;
+            background-color: rgb(39, 39, 39);
+        }
+        #bvu{
+            width: 18.2%;
+            height: 127px;
+            float: left;
+            background-color: rgb(39, 39, 39);
+            padding-top: 27px;
+            margin-left: 90px;
+        }
+        #mqu{
+            width: 100%;
+            height: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            font-size: 10px;
+        }
+        #bod{
+            width: 100%;
+            height: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            padding-top: 24px;
+            font-size: 13.2px;
+        }
+        #gwv{
+            width: 15.2%;
+            height: 123px;
+            float: left;
+            margin-left: 32px;
+            padding-top: 27px;
+            background-color: rgb(39, 39, 39);
+        }
+        #byr{
+            width: 30px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            border-radius: 2px;
+            /* margin-left: 4px; */
+            float: left;
+            color: white;
+            padding: 9px;
+        }
+        #zsj{
+            width: 56px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            border-radius: 2px;
+            margin-left: 3.7px;
+            color: white;
+            float: left;
+            padding: 9px;
+        }
+        #bgw{
+            width: 47px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            color: white;
+            border-radius: 2px;
+            float: left;
+            margin-left: 3.5px;
+            padding: 9px;
+        }
+        #vgtf{
+            width: 103.4px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            color: white;
+            border-radius: 2px;
+            margin-top: 4px;
+            float: left;
+            padding: 9px;
+        }
+        #ftef{
+            width: 32px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-left: 3.5px;
+            color: white;
+            border-radius: 2px;
+            margin-top: 4px;
+            float: left;
+            padding: 9px;
+        }
+        #cgwh{
+            width: 36px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            /* margin-left: 3.7px; */
+            color: white;
+            margin-top: 4px;
+            border-radius: 2px;
+            float: left;
+            padding: 9px;
+        }
+        #wtg{
+            width: 38px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-left: 3px;
+            border-radius: 2px;
+            color: white;
+            margin-top: 4px;
+            float: left;
+            padding: 9px;
+        }
+        #gta{
+            width: 42px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-left: 3px;
+            color: white;
+            border-radius: 2px;
+            margin-top: 4px;
+            float: left;
+            padding: 9px;
+        }
+        #boy{
+            width: 57.3px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-top: 5px;
+            border-radius: 2px;
+            /* margin-left: 3.7px; */
+            color: white;
+            float: left;
+            padding: 9px;
+        }
+        #vas{
+            width: 38px;
+            height: auto;
+            background-color: rgba(11, 11, 11, 0.419);
+            font-size: 14px;
+            margin-left: 3.1px;
+            color: white;
+            border-radius: 2px;
+            margin-top: 4.5px;
+            float: left;
+            padding: 9px;
+        }
+        #vyqu{
+            width: 17.5%;
+            height: 153px;
+            float: left;
+            padding-top: 28px;
+            margin-left: 74px;
+            background-color: rgb(39, 39, 39);
+        }
+        #bbdu{
+            width: 100%;
+            height: 70px;
+            float: left;
+            background-color: rgb(39, 39, 39);
+        }
+        #aas{
+            width: 19px;
+            height: 15px;
+            background-color: rgb(39, 39, 39);
+            background-image: url(tweet.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #vgd{
+            width: 220px;
+            height: 69px;
+            margin-left: 33px;
+            float: left;
+            line-height: 21px;
+            background-color: rgb(39, 39, 39);
+            font-size: 15px;
+            margin-top: -15px;
+            color: white;
+        }
+        #vdou{
+            color: rgb(245, 0, 216);
+            font-size: 10px;
+            /* margin-top: 38px; */
+            background-color: rgb(39, 39, 39);
+        }
+        #llk{
+            width: 100%;
+            height: 70px;
+            margin-top: 13px;
+            float: left;
+            background-color: rgb(39, 39, 39);
+        }
+        #vup{
+            width: 19px;
+            height: 15px;
+            background-color: rgb(39, 39, 39);
+            background-image: url(tweet.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #pop{
+            width: 220px;
+            height: 69px;
+            margin-left: 33px;
+            float: left;
+            line-height: 21px;
+            background-color: rgb(39, 39, 39);
+            font-size: 15px;
+            margin-top: -15px;
+            color: white;
+        }
+        #kmk{
+            color: rgb(245, 0, 216);
+            font-size: 10px;
+            /* margin-top: 38px; */
+            background-color: rgb(39, 39, 39);
+        }
+        #hvs{
+            width: 18.5%;
+            height: 160px;
+            float: left;
+            margin-left: 40px;
+            margin-top: 25px;
+            background-color: rgb(39, 39, 39);
+        }
+        #xdr{
+            width: 77px;
+            height: 77px;
+            background-image: url(t1.jpg);
+            background-size: contain;
+            float: left;
+            /* margin-top: 4px; */
+            /* margin-left: 4px; */
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #rse{
+            width: 77px;
+            height: 77px;
+            background-image: url(t2.jpg);
+            background-size: contain;
+            float: left;
+            /* margin-top: 4px; */
+            margin-left: 4px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #heu{
+            width: 77px;
+            height: 77px;
+            background-image: url(t3.jpg);
+            background-size: contain;
+            float: left;
+            /* margin-top: 4px; */
+            margin-left: 4px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #whn{
+            width: 77px;
+            height: 77px;
+            background-image: url(t4.jpg);
+            background-size: contain;
+            float: left;
+            margin-top: 4px;
+            /* margin-left: 6px; */
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #itt{
+            width: 77px;
+            height: 77px;
+            background-image: url(t55.jpg);
+            background-size: contain;
+            float: left;
+            margin-top: 4px;
+            margin-left: 4px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+        #pyf{
+            width: 77px;
+            height: 77px;
+            background-image: url(t6.jpg);
+            background-size: contain;
+            float: left;
+            margin-top: 4px;
+            margin-left: 4px;
+            background-repeat: no-repeat;
+            /* background-color: firebrick; */
+        }
+    </style>
+    <body>
+        <div id="container">
+            <div id="a">
+                <div id="hu">
+                <div id="ui">
+                    <div id="gg">
+                        <div id="se" style="font-family: Forte;">hey<span id="ju" style="font-family: Freehand521 BT;">look</span></div>
+                    </div>
+                </div>
+                <div id="ki">
+                        <!-- <div id="ti">HOME</div>
+                        <div id="lp">ABOUT</div>
+                        <div id="hj">SERVICES</div>
+                        <div id="ll">PORTFOLIO</div>
+                        <div id="gh">CONTACT</div> -->
+                        <div id="nav">
+                            <ul>
+                              <li><a href="heylook.html"><p>HOME</p></a></li>
+                              <li><a href="hey,abt,look.html"><p>ABOUT</p></a></li>
+                              <!-- <li><a href="hey,services,look.html"><p>SERVICES</p></a></li> -->
+                              <li><a href="hey,news,look.html"><p>NEWS</p></a></li>
+                              <li><a href="hey,port,look.html"><p>PORTFOLIO</p></a></li>
+                              <li><a href="hey,con,look.html"><p>CONTACTS</p></a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div id="he">
+                    <div id="up"></div>
+                </div>
+                </div>
+                <div id="nu">
+                    <div id="hty" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contacts</div>
+                    <!-- <div id="y">tag your unique styles</div> -->
+                </div>
+            </div>
+            <div id="sam"></div>
+            <div id="ass"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876001.0239395433!2d-78.33962929234114!3d44.75096492567882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sng!4v1682575112375!5m2!1sen!2sng" width="99%" height="535" style="border:0; box-shadow: 0px 3px 10px 6px black; margin-left: 5.5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="cvv">
+                <div id="frr">
+                    <form>
+                        <p><input style="width: 287px; height: 30px; border-radius: 5px; background-color: transparent;" type= "text"placeholder=Name><input style="width: 287px; height: 30px; border-radius: 5px; margin-left: 24px; background-color: transparent;" type= "text"placeholder=Email><input style="width: 288.5px; height: 30px; border-radius: 5px; margin-left: 24px; background-color: transparent;" type= "text"placeholder=Telephone></p>
+                        <p></p>
+                        <p><input style="width: 100%; height: 200px; border-radius: 5px; background-color: transparent;" type= "text"placeholder=message></p>
+                    </form>
+                    <button type="submit" style="margin-top: 5px; font-family: Berlin Sans FB; color: white; background-color: rgb(249, 0, 162); border: 2px solid rgb(249, 0, 162); font-size: 16px; border-radius: 3px; width: 80px; height: 30px;">SEND</button>
+                </div>
+            </div>
+            <div id="dfr">
+                <div id="ljj">
+                    <div id="nqn">About</div>
+                    <div id="bxh">The Tags</div>
+                    <div id="nau">Latest Tweets</div>
+                    <div id="boq">Flickr Feed</div>
+                </div>
+                <div id="jis">
+                    <div id="bvu">
+                        <div id="mqu">Copyright © 2023 Heylook Ventures Inc. All<br>Rights Reserved.<br>
+                            All products featured on Heylook are<br>independently selected by our editors.<br> However, when you buy something through<br> our retail links, you will earn an affiliate<br> commission. As an Amazon Associate<br> Heylook earns from qualifying<br> purchases. The material on this site can not<br> be reproduced, distributed, transmitted,<br> cached or otherwise used, except with prior<br> written permission of Heylook ventures Inc.</div>
+                        <!-- <div id="bod">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit pellentesque id arcu<br>reque, et convallis es felis.</div> -->
+                    </div>
+                    <div id="gwv">
+                        <div id="byr">Hairs</div>
+                        <div id="zsj">Footwears</div>
+                        <div id="bgw">Bespoke</div>
+                        <div id="vgtf">Capsule Wardrode</div>
+                        <div id="ftef">Junior</div>
+                        <div id="cgwh">Petites</div>
+                        <div id="wtg">Atelier</div>
+                        <div id="gta">Vintage</div>
+                        <div id="boy">Make-ups</div>
+                        <div id="vas">Preppy</div>
+                        <!-- <div id="vyqu"></div>
+                        <div id="bbdu"></div> -->
+                    </div>
+                    <div id="vyqu">
+                        <div id="bbdu">
+                            <div id="aas"></div>
+                            <div id="vgd">very swift and realiable!!!<br><b>janehermans2@gmail.com</b><br><span id="vdou">ABOUT 10 MINS AGO</span></div>
+                        </div>
+                        <div id="llk">
+                            <div id="vup"></div>
+                            <div id="pop">#best fashion website i know.<br><b>leobrown70@gmail.com</b><br><span id="kmk">ABOUT 43 MINS AGO</span></div>
+                        </div>
+                    </div>
+                    <div id="hvs">
+                        <div id="xdr"></div>
+                        <div id="rse"></div>
+                        <div id="heu"></div>
+                        <div id="whn"></div>
+                        <div id="itt"></div>
+                        <div id="pyf"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
